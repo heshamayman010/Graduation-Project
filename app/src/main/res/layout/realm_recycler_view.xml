@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="396dp"
+        android:layout_height="215dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:cardBackgroundColor="@color/design_default_color_error"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="213dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/recycler_job_realm"
+                android:layout_width="97dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="104dp"
+                android:layout_marginTop="16dp"
+                android:text="Job"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recycler_id_realm" />
+
+            <TextView
+                android:id="@+id/recycler_id_realm"
+                android:layout_width="93dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="108dp"
+                android:layout_marginTop="28dp"
+                android:text="ID"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recycler_date_realm" />
+
+            <ImageView
+                android:id="@+id/recycler_img"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.111"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/recycler_date_realm"
+                android:layout_width="95dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:text="Age"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@+id/recycler_img"
+                app:layout_constraintTop_toBottomOf="@+id/recycler_name_realm" />
+
+            <TextView
+                android:id="@+id/recycler_name_realm"
+                android:layout_width="62dp"
+                android:layout_height="23dp"
+                android:layout_marginStart="12dp"
+                android:text="Name"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@+id/recycler_img"
+                app:layout_constraintTop_toTopOf="@+id/recycler_img" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="56dp"
+                android:layout_height="62dp"
+                android:layout_marginTop="48dp"
+                android:layout_marginEnd="47dp"
+                android:layout_marginBottom="44dp"
+                android:background="#AF0020"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/recycler_job_realm"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recycler_img"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/ic_more_vert_black_24dp"
+                android:contentDescription="TODO" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
